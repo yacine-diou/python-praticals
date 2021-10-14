@@ -1,0 +1,330 @@
+#
+
+`Python for Scientific Computing and Software Engineering`
+
+##
+
+An Initiation to Programming using Python (Init2Py)
+
+###
+
+Practicals: Variables, Types & Operations
+
+*Exercise 00:*
+
+____
+[arabic]
+. Declare a variable `firstname` and assign it a value.
+. Declare a `lastname` variable and assign a value to it.
+. Declare a `full_name` variable and assign it a value.
+. Declare a `country` variable and assign it a value.
+. Declare a variable `city` and assign it a value.
+. Declare a `age` variable and assign it a value.
+. Declare a variable `year` and assign it a value.
+. Declare a variable `is_marrie` and assign it a value.
+. Declare a variable `is_true` and assign it a value.
+___
+
+___
+For each of the above variable, display the value it contains using the
+`print()` function.
+____
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+firstname = 'fatou'
+print(firstname)
+lastname = 'Fall'
+print(lastname)
+Full_name = 'fatou fall'
+print(Full_name)
+country = 'Senegal'
+print(country)
+city = 'Dakar'
+print(city)
+age = 23
+print(age)
+year = 2021
+print(year)
+is_marrie = 'No I am not Married'
+print(is_marrie)
+is_true ='Yes it is true'
+print(is_true)
+----
+
+*Exercise 01:* > Check the data type of all your variables using the
+built-in function `type()`.**
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+print(type(firstname))
+print(type(lastname))
+print(type(full_name))
+print(type(country))
+print(type(city))
+print(type(age))
+print(type(year))
+print(type(is_married))
+print(type(is_true))
+----
+
+*Exercise 02:* > Calculate the value of latexmath:[$y$]
+(latexmath:[$y = x^2 + 6x + 9$]). Try using different values of
+latexmath:[$x$] and determine at what value of latexmath:[$x$] will
+latexmath:[$y$] be equal to 0.**
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+for x in range(0,(-10)):
+    y = x**2+6*x+9
+    print (y)
+    
+----
+
+*Exercise 03:* > +
+1. Declare your age as an integer variable 2. Declare your height as a
+float variable 3. Declare a variable that stores the base and height of
+a triangle. Calculate the area of this triangle (area = 0.5 x b x h).
+
+== _Tip: receiving input from the user _
+
+*To receive an input from the user, we use `input()`.*.
+
+*Example* Receive two numbers as input from the user and calculate their
+power:
+
+[source,python]
+----
+base = input("Enter a base: ")
+exponent = input("Enter an exponent: ")
+result = float(base) ** float(exponent)
+print(f "{base} to the power of {exponent} = {result}")
+----
+
+*Exercise 04:* > *Write a small code that asks the user to enter the
+side latexmath:[$a$], the side latexmath:[$b$] and the side
+latexmath:[$c$] of a triangle. Calculate the perimeter of the triangle
+(perimeter = a + b + c).*
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+a = int(input("veuillez entrer le coté a:"))
+b = int(input("veuillez entrer le coté b"))
+c = int(input("veuillez entrer le coté c"))
+P = a+b+c
+print("la valeur du périmétre du triangle est",P)
+----
+
+*Exercise 05:* > *Obtain the length and width of a rectangle using the
+prompt. Calculate its `area`and its `perimeter`.*
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+L = int(input("veuillez entrer la longueur: "))
+l = int(input("veuillez entrer la largeur: "))
+Surface = L*l
+Perimetre = (L+l)*2
+print("le perimetre est =",Perimetre)
+print("la surface est =",Surface)
+----
+
+*Exercice 06:* > *Obtenez le rayon d’un cercle en utilisant l’invite.
+Calculez l’aire (aire = pi x r x r) et la circonférence (c = 2 x pi x r)
+où pi = 3,14.*
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+r = int(input("veuillez entrer un rayon: "))
+aire = 3.14* r*r
+circonference = 2* 3.14* rù
+print("l'aire est: ",aire)
+print("la circonference est: ",circonference)
+----
+
+*Exercice 07:* > *Calculez la pente, l’ordonnée à l’origine en x et
+l’ordonnée à l’origine en latexmath:[$y$] de latexmath:[$y = 2x -2$].*
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+*Exercice 08:* > *Rédigez un script qui demande à l’utilisateur d’entrer
+les heures et le taux horaire. Calculez la rémunération de la personne
+?*
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+N =int(input("veuillez entrer le nobre d'heure: "))
+T = int(input("veuillez entrer le taux horaire: "))
+R = N*T
+print("la rénumération égale ", R)
+----
+
+*Exercice 09:* > *Écrivez un script qui demande à l’utilisateur d’entrer
+le nombre d’années. Calculez le nombre de secondes qu’une personne peut
+vivre. Supposons qu’une personne puisse vivre cent ans.*
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+A = int(input("veuillez entrer votre age: "))
+J = A*365
+H = J*24
+T = H*3600
+print("le nombre de secondes à vivre est à: ",T,'secondes')
+----
+
+*Exercice 10:* > *Écrivez un script Python qui affiche le tableau
+suivant*
+
+....
+1 1 1 1 1
+
+2 1 2 4 8
+
+3 1 3 9 27
+
+4 1 4 16 64
+
+5 1 5 25 125
+....
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+for i in range(1,6):
+    print('\n',i)
+l=1
+for j in range(1,6):
+    print('\n',l)
+for k in range(1,6):
+    print('\n',k)
+for n in range(1,6):
+    print(n*n)
+for m in range(1,6):
+    print(m*m*m)
+----
+
+*Exercise 11:* >**Assign the variables `time` and `distance` with the
+values latexmath:[$6.892$] and latexmath:[$19.7$]. Calculate and display
+the value of the speed. Improve the display by imposing a digit after
+the decimal point.**
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+distance = 19.7
+temps = 6.892
+vitesse = distance/temps
+print("la vitesse est égale à: ",round(vitesse,1))
+----
+
+*Exercice 12:* > *Écrire un programme qui, à partir de la saisie d’un
+rayon et d’une hauteur, calcule levolume d’un cône droit.*
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+h = int(input("veuillez entrer h: "))
+r = int(input("veuillez entrer r: "))
+B = 3.14*r*r
+V = (1/3)*B*h
+print("le volume du cone est: ",V)
+----
+
+*Exercise 13:* > *The user gives a positive integer and the program
+announces how many times in a row this integer is divisible by 2.*
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+N = int(input("veuillez entrer un nombre:"))
+i=0
+while N%2 =0:
+    i=i+1
+    print("N est divisible par 2",N,"fois")
+----
+
+*Exercise 14:* >**The user gives an integer between 2 and 12, the
+program gives the number of ways to do this by rolling two dice.
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+*Exercice 15:* > *Utilisez la fonction d’entrée intégrée `input()` pour
+obtenir le `_prénom_`, le `_nom_`, le `_pays_d_origine` et l’`_age_`
+d’un utilisateur et stockez la valeur dans les noms des variables
+correspondantes.*
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+nom =(input("veuillez entrer votre nom: "))
+prenom =(input("veuillez entrer votre prenom: "))
+pays_d_origine =(input("D'ou venez vous"))
+age =(input("quel age avez vous"))
+
+----
+
+*Exercice 16:*
+
+*Déclarer latexmath:[$5$] comme `num_one` et latexmath:[$4$] comme
+`num_two`*
+
+[arabic]
+. Additionner `num_one` et `num_two` et affecter la valeur à une
+variable `totale`.
+. Soustraire `num_two` de `num_one` et affecter la valeur à une variable
+`diff`.
+. Multipliez le `num_one` et le `num_two` et attribuez la valeur à une
+variable `produit`.
+. Divisez le `num_one` par le `num_two` et attribuez la valeur à une
+variable `division`.
+. Calculez `num_one` à la puissance de `num_two` et attribuez la valeur
+à une variable `exp`.
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+num_one = 5
+num_two =4
+totale = num_one +num_two
+diff = num_one - num_two
+produit = num_one * num_two
+division = num_one / num_two
+exp = num_one**(num_two)
+----
+
+🎉 FÉLICITATIONS! / CONGRATULATIONS! 🎉
