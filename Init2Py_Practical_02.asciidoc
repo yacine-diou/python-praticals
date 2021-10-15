@@ -1,0 +1,577 @@
+#
+
+`Python for Scientific Computing and Software Engineering`
+
+##
+
+An Initiation to Programming using Python (Init2Py)
+
+###
+
+Travaux Pratiques: Chaînes de caractères
+
+*EN = English*
+
+*FR = Français*
+
+== *Exercice 00:*
+
+____
+*FR: Concaténation des chaînes `Trente', `Jours', `De', `Python',
+`Trente Jours De Python' en une seule chaîne.*
+___
+
+___
+*EN: Concatenation of the strings `Thirty', `Days', `From', `Python',
+`Thirty Days From Python' into one string.*
+____
+
+
++*In[2]:*+
+[source, ipython3]
+----
+x = "Trente "
+y = "Jours "
+z = "De "
+h = "Python "
+z = x+y+z+h
+print(z)
+----
+
+
++*Out[2]:*+
+----
+Trente Jours De Python 
+----
+
+== *Exercice 01:*
+
+____
+*FR: Concaténer la chaîne `Codage', `Pour', `Tous' en une seule chaîne,
+`Codage Pour Tous'.*
+___
+
+___
+*EN: Concatenate the string `Coding', `For', `All' into one string,
+`Coding For All'.*
+____
+
+
++*In[3]:*+
+[source, ipython3]
+----
+x = "codage "
+y = "Pour "
+r = "Tous"
+t = x + y +r
+print(t)
+----
+
+
++*Out[3]:*+
+----
+codage Pour Tous
+----
+
+== *Exercice 02:*
+
+____
+FR: 1. *Déclarer une variable nommée `compagnie` et lui attribuer une
+valeur initiale `Coding    For All`.* 2. *Imprimez la variable
+`compagnie` en utilisant `print()`.*
+___
+
+___
+EN: 1. *Declare a variable named `company` and give it an initial value
+`Coding For All`.* 2. *Print the variable `company` using `print()`.*
+____
+
+
++*In[4]:*+
+[source, ipython3]
+----
+compagnie = "Coding For All"
+print(compagnie)
+----
+
+
++*Out[4]:*+
+----
+Coding For All
+----
+
+== *Exercice 03:*
+
+____
+FR: 1. *Imprimez la longueur de la chaîne de la société en utilisant la
+méthode `len()` et la fonction `print()`.* 2. *Changez tous les
+caractères en lettres majuscules à l’aide de la méthode `upper()`.* 3.
+*Changez tous les caractères en minuscules à l’aide de la méthode
+`lower()`.* 4. *Utilisez les méthodes `capitalize()`, `title()`,
+`swapcase()` pour formater la valeur de la chaîne `Coding For All"`.*
+___
+
+___
+EN: 1. *Print the length of the company string using the `len()` method
+and the `print()` function.* 2. *Change all characters to uppercase
+using the `upper()` method.* 3. *Change all characters to lowercase
+using the `lower()` method.* 4. *Use the `capitalize()`, `title()`,
+`swapcase()` methods to format the value of the
+`Coding For All"`string.*
+____
+
+
++*In[16]:*+
+[source, ipython3]
+----
+print(len(compagnie))
+compagnie = compagnie.upper()
+print(compagnie)
+compagnie = compagnie.lower()
+print(compagnie)
+compagnie = compagnie.capitalize()
+print(compagnie)
+compagnie = compagnie.title()
+print(compagnie)
+compagnie = compagnie.swapcase()
+print(compagnie)
+
+----
+
+
++*Out[16]:*+
+----
+14
+CODING FOR ALL
+coding for all
+Coding for all
+Coding For All
+cODING fOR aLL
+----
+
+== *Exercice 04:*
+
+____
+FR: 1. *Remplacez le mot `Coding` dans la chaîne `Coding For All` par
+`Python`.* 2. *Divisez la chaîne `Coding For All` en utilisant l’espace
+comme séparateur `(split())`.* 3. *Quel est le caractère à l’indice 0
+dans la chaîne `Coding For All`?* 4. *Quel est le dernier indice de la
+chaîne `Coding For All` ?*
+___
+
+___
+EN: 1. *Replace the word `Coding` in the `Coding For All` string with
+`Python`.* 2. *Split the `Coding For All` string using the space as a
+separator `(split())`.*. 3. *What is the character at index 0 in the
+string `Coding For All`?*. 4. *What is the last index of the string
+`Coding For All`?*.
+____
+
+
++*In[20]:*+
+[source, ipython3]
+----
+compagnie = "Coding For All"
+chaine = compagnie.replace("Coding", "Python")
+print(chaine)
+sep = compagnie.split()
+print(sep)
+print(compagnie[0])
+compagnie[-1]
+----
+
+
++*Out[20]:*+
+----
+Python For All
+['Coding', 'For', 'All']
+C
+'l'----
+
+== *Exercice 05:*
+
+____
+*FR: Etant donné une chaine `__s__`, afficher une chaine faite des deux
+premiers et des deux derniers caractères.*
+___
+
+___
+*EN: Given a string `__s__`, display a string made of the first two and
+last two characters the last two characters.*
+____
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+s = "qui êtes vous"
+print(s[0] s[1] s[-1] s[-2])
+----
+
+== *Exercice 06:*
+
+____
+*FR: Afficher les textes suivants à l’aide d’une seule instruction
+`print()`* :
+____
+
+....
+un peu
+beaucoup
+passionnément
+
+"je t'aime" dit-elle
+....
+
+____
+*EN: Display the following texts with a single statement print()`*
+____
+
+....
+a little
+a lot
+passionately
+
+"I love you" she says
+....
+
+
++*In[30]:*+
+[source, ipython3]
+----
+print("un peu \nbeaucoup \npassionnément \n\n''je t'aime'' dit-elle ")
+----
+
+
++*Out[30]:*+
+----
+un peu 
+beaucoup 
+passionnément 
+
+''je t'aime'' dit-elle 
+----
+
+== *Exercice 07:*
+
+____
+*FR: Écrivez un programme pour vérifier si la lettre `e' est présente
+dans le mot `Parapluie'.*
+___
+
+___
+*EN: Write a program to check if the letter `e' is present in the word
+`Umbrella'.*
+____
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+   ch = Parapluie
+for i in range(0, len(ch)):
+     if ch[i]=='e':
+        print("True e est dans le mot")
+    else:
+        print("e n'est pas dans le mot")
+   
+----
+
+== *Exercice 08:*
+
+____
+*FR: Demandez à l’utilisateur de saisir son prénom et son nom de famille
+en réponse à une seule invite. Utilisez `split()` pour extraire les
+noms, puis affectez chaque nom à une variable différente.*
+___
+
+___
+*EN: Ask the user to enter their first and last name in response to a
+single prompt. Use `split()` to extract the names, then assign each name
+to a different variable.*
+____
+
+
++*In[41]:*+
+[source, ipython3]
+----
+x = input("prénom et nom: ")
+x = x.split()
+print(x)
+
+
+
+
+----
+
+
++*Out[41]:*+
+----
+prénom et nom: yacine diouf
+['yacine', 'diouf']
+----
+
+== *Exercice 09:*
+
+____
+*FR: Demandez à l’utilisateur de saisir un mot, puis imprimez la
+longueur de ce mot.*
+___
+
+___
+*EN: Ask the user to enter a word, then print the length of the word.*
+____
+
+
++*In[42]:*+
+[source, ipython3]
+----
+x = input("veuillez entrer un mot: ")
+y = len(x)
+print(y)
+----
+
+
++*Out[42]:*+
+----
+veuillez entrer un mot: soda
+4
+----
+
+== *Exercice 10:*
+
+____
+*FR: Écrivez un programme pour vérifier si le mot ``orange'' est présent
+dans l’expression ``Ceci est du jus d’orange''.*
+___
+
+___
+*EN: Write a program to check if the word ``orange'' is present in the
+expression ``This is orange juice''.*
+____
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+ch = "ceci est du jus d'orange"
+for i in range (len(ch)):
+    if char == 'o': 
+        print("true")
+    else:
+    print("false")
+----
+
+== *Exercice 11:*
+
+____
+*FR: Ecrivez un programme pour trouver la première et la dernière
+occurrence de la lettre `o' et du caractère `,' dans ``Hello, World''.*
+___
+
+___
+*EN: Write a program to find the first and last occurrence of the letter
+`o' and the character `,' in ``Hello, World''.*
+____
+
+
++*In[51]:*+
+[source, ipython3]
+----
+r = "Hello, World"
+print(r[0])
+print(''.join(r).rindex('o'))
+print(''.join(r).rindex(','))
+----
+
+
++*Out[51]:*+
+----
+H
+8
+5
+----
+
+== *Exercice 12:*
+
+____
+*FR: Écrivez un programme qui prend votre nom complet en entrée et
+affiche les abréviations du prénom et du second prénom, sauf le nom de
+famille qui est affiché tel quel. Par exemple, si votre nom est
+`Robert Brett Roser`, le résultat devrait être `R.B.Roser`.*
+___
+
+___
+*EN: Write a program that takes your full name as input and displays the
+first and middle name abbreviations, except for the last name which is
+displayed as is. For example, if your name is `Robert Brett Roser`, the
+result should be `R.B.Roser`.*
+____
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+x= input("veuillez entrer votre prenom: ")
+y = input("veuillez entrer votre nom: ")
+print(x[0], y)
+
+----
+
+== *Exercice 13:*
+
+____
+*FR: Écrivez un programme pour trouver le plus grand et le plus petit
+mot dans la chaîne ``Ceci est un parapluie''.*
+___
+
+___
+*EN: Write a program to find the largest and smallest words in the
+string ``This is an umbrella''.*
+____
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+chaine = "Ceci est un parapluie"
+print(min(chaine))
+print(max(chaine))
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+#### **Exercice 14:** 
+> **FR: Écrivez un programme pour créer une nouvelle chaîne de caractères avec le mot `le` supprimé dans la phrase `C'est le lion dans la cage`.**
+
+>**EN: Write a program to create a new string with the word `the` deleted in the sentence `This is the lion in the cage`.**
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+s = "c'est le lion dans la case"
+s = s.replace('le','')
+print(s)
+----
+
+== *Exercice 14:*
+
+____
+*FR:Créez un programme qui demande à l’utilisateur d’entrer son nom et
+son âge en 2021. Imprimez un message qui lui est adressé et qui lui
+indique l’année où il aura 100 ans.*
+___
+
+___
+*EN: Create a program that asks the user to enter their name and age in
+2021. Print a message to the user that tells them the year they will be
+100 years old.*
+____
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+x = input("entrez votre nom:")
+y = int(input("entrez votre age: "))
+if y <100:
+    A = 100-y
+    B = 2021 + A
+    print("d'ici ",B,"vous aurez 100ans")
+else:
+    print("vous avez déjà 100ans")
+
+----
+
+== *Exercice 15:*
+
+____
+*FR:Définissez la variable `x` comme la chaîne de caractères `x`=
+``abcde'' .* 1. **Quelle est la valuer de 3*x?** 2. **Quelle est la
+valuer de x[1]?** 3. **Quelle est la valuer de x[-1]?** 4. **Quelle est
+la valuer de x[::2]?**
+___
+
+___
+*EN: Set the variable `x` as the string `x`=``abcde'' .*. 1. **What is
+the value of 3*x?** 2. **What is the value of x[1]?** 3. **What is the
+value of x[-1]?**. 4. **What is the value of x[::2]?**
+____
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+x = "abcde"
+print(3*str(x))
+x[1]
+x[-1]
+x[::2]
+----
+
+== *Exercice 16:*
+
+____
+*FR:Créez une chaîne unique contenant 5 copies de la chaîne `abc'.*
+___
+
+___
+*EN:Create a single string containing 5 copies of the string `abc'.*
+____
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+k="abc"
+print(5*str(k))
+----
+
+== *Exercice 17:*
+
+____
+*FR:Utilisez l’opérateur de multiplication pour créer une ``ligne'' de
+50 tirets.*
+___
+
+___
+*EN:Use the multiplication operator to create a ``line'' of 50 dashes.*
+____
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+for i in range(1, 51):
+    print(*"\n")
+----
+
+== *Exercice 18:*
+
+____
+*FR: Ecrire un programme qui demande a l’utilisateur d’entrer la
+temperature en degres celsius et qui retourne la temperaure en degre
+Fahrenheit. Formule: (0°C × 9/5) + 32 = 32°F .*
+___
+
+___
+*EN: Write a program that asks the user to enter the temperature in
+degrees Celsius and returns the temperature in degrees Fahrenheit.
+Formula: (0°C × 9/5) + 32 = 32°F .*
+____
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+C = int(input("entrer la temperature"))
+F = ((C *(9/5)) +32)/32
+print("la temperature en fahrenheit est égale à: ",F)
+----
+
+🎉 FÉLICITATIONS! / CONGRATULATIONS! 🎉
