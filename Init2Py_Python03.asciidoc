@@ -1,0 +1,168 @@
++*In[5]:*+
+[source, ipython3]
+----
+n = int(input("veuillez entrer un entier n"))
+som = 3
+pro = 1
+for i in range (0, n):
+    if i%2 != 0:
+        som = som + i
+        print("la somme est", som)
+    elif i%2 == 0:
+        pro = pro * (i+3)
+        print("le produit est",pro)
+----
+
+
++*Out[5]:*+
+----
+veuillez entrer un entier n5
+le produit est 3
+la somme est 4
+le produit est 15
+la somme est 7
+le produit est 105
+----
+Écrivez un programme qui lit le numéro du jour de la semaine (de 0 à 6). S'il s'agit d'un
+jour ouvrable, le programme écrira le nom du jour correspondant. Autrement,
+il écrira le mot "Week-end".
+
++*In[15]:*+
+[source, ipython3]
+----
+i = int(input('veuillez entrer x'))
+for i in range(0, 7):
+    if (i==0):
+        print("lundi")
+    elif (i==1):
+        print("mardi")
+    elif (i==2):
+        print("Mercredi")
+    elif (i==3):
+        print("jeudi")
+    elif (i==4):
+        print("vendredi")
+    else:
+        print("week-end")
+----
+
+
++*Out[15]:*+
+----
+veuillez entrer x5
+lundi
+mardi
+Mercredi
+jeudi
+vendredi
+week-end
+week-end
+----
+
+Faites un programme qui, étant donné un numéro de mois (de 0 à 11),
+indique combien de jours il a (28, 30 ou 31), en ignorant les années
+bissextiles.
+
+
++*In[18]:*+
+[source, ipython3]
+----
+for i in range(0,11):
+    if i==1:
+        print('mois numéro 01: 30 jours')
+    elif i==2:
+        print('mois numéro 02: 28 jours')
+    elif i==3:
+        print('mois numéro 03: 30 jours')
+    elif i==4:
+        print('mois numéro 04: 31 jours')
+    elif i==5:
+        print('mois numéro 05: 30 jours')
+    elif i==6:
+        print('mois numéro 06: 31 jours')
+    elif i==7:
+        print('mois numéro 07: 30 jours')
+    elif i==8:
+        print('mois numéro 08: 31 jours')
+    elif i==9:
+        print('mois numéro 09: 30 jours')
+    elif i==10:
+        print('mois numéro 10: 31 jours')
+    elif i==11:
+        print('mois numéro 11: 30 jours')
+    elif i==12:
+        print('mois numéro 12: 31 jours')
+----
+
+
++*Out[18]:*+
+----
+mois numéro 01: 30 jours
+mois numéro 02: 28 jours
+mois numéro 03: 30 jours
+mois numéro 04: 31 jours
+mois numéro 05: 30 jours
+mois numéro 06: 31 jours
+mois numéro 07: 30 jours
+mois numéro 08: 31 jours
+mois numéro 09: 30 jours
+mois numéro 10: 31 jours
+----
+
+Écrivez deux versions de code python qui affiche votre nom 3 fois. Une
+version avec un ``for loop'' et une autre version avec une ``while
+loop''.
+
+
++*In[19]:*+
+[source, ipython3]
+----
+for i in range(0,3):
+    print("yacine diouf")
+    
+----
+
+
++*Out[19]:*+
+----
+yacine diouf
+yacine diouf
+yacine diouf
+----
+
+
++*In[20]:*+
+[source, ipython3]
+----
+i = 1
+while (i<4):
+    print("votre nom est yacine")
+    i = i +1
+----
+
+
++*Out[20]:*+
+----
+votre nom est yacine
+votre nom est yacine
+votre nom est yacine
+----
+
+Étant donné deux nombres a0 et a1, la séquence de Fibonacci qu’ils
+génèrent est construite à partir de la formule de récursivité an+1 = an
++ an−1. Calculer les 15 premiers termes d’un Fibonacci séquence,
+demandant à l’utilisateur les valeurs initiales
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
