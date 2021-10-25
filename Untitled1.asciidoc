@@ -1,0 +1,98 @@
+Écrivez un script python qui demande à l’utilisateur les valeurs de x et
+y et utilise ces entrées pour calculer la valeur numérique de
+l’expression
+
+
++*In[9]:*+
+[source, ipython3]
+----
+from math import *
+x = int(input("veuillez entrer x: "))
+y = int(input("veuillez entrer y: "))
+num = sqrt(pow(x,2+y))/((1/x)+(2*sin(y)))
+print(num)
+----
+
+
++*Out[9]:*+
+----
+veuillez entrer x: 4
+veuillez entrer y: 5
+-76.74557743969335
+----
+
+écrire fonction qui, étant donné deux nombres entiers b et n (n est
+positif), calcule b
+
+n sans utiliser
+
+l’opérateur de puissance de python. Nommez cette fonction ownpowerfn.py.
+PS : Et si on ne précisait pas que n doit être positif ?
+
+
++*In[12]:*+
+[source, ipython3]
+----
+def ownpowerfn(b,n):
+    puissance = b**n
+    return(puissance)
+print(ownpowerfn(5,2))
+----
+
+
++*Out[12]:*+
+----
+25
+----
+
+[arabic, start=3]
+. Écrivez des fonctions qui effectuent les opérations suivantes :
+
+[loweralpha]
+. Prend deux arguments et calcule leurs moyennes arithmétiques et
+géométriques. Nom ces fonctions respectivement arithmetic_mean et
+geometry_mean.
+. Convertit le degré Celsius en Fahrenheit et vice versa. Nommez ces
+deux fonctions celcius_to_fahrenheit et fahrenheit_to_celcius
+respectivement.
+. Convertit l’angle en degrés en radians et vice versa. Nommez ces deux
+fonctions degrés_to_radians et radians_to_degrees respectivement.
+. Calcule la circonférence et l’aire d’un cercle étant donné le rayon.
+
+
++*In[16]:*+
+[source, ipython3]
+----
+from math import*
+def arithmetic_mean(x,y):
+    moy_arith = (x+y)/2
+    return (moy_arith)
+def geometry_mean(x,y):
+    moy_geo = (sqrt(x+y)**1/2)
+    return (moy_geo)
+print(geometry_mean(2,5))
+----
+
+
++*Out[16]:*+
+----
+1.3228756555322954
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+def celcius_to_fahrenheit(C):
+    return(C*(9/5)+32)
+def fahrenheit_to_celsuis(F):
+    return((F-32)*5/9)
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
